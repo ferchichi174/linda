@@ -1,0 +1,9 @@
+db:
+ host: 'linda.postgres.database.azure.com'
+ username: 'linda@linda'
+ password: 'BLOWblow123?'
+ synchronize: true
+
+
+jwt:
+  secret: 'topSecret51' 
