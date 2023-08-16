@@ -10,14 +10,14 @@ import { User } from "src/enteties/user.entity";
 const dbConfig = config.get('db')
 
 export const typeOrmConfig: TypeOrmModuleOptions={
-    type: dbConfig.type,
-    host: process.env.RDS_HOSTNAME || dbConfig.host,
-    port: process.env.RDS_PORT || dbConfig.port,
-    username: process.env.RDS_USERNAME || dbConfig.username,
-    password:process.env.RDS_PASSWORD || dbConfig.password,
-    database: process.env.RDS_DB_NAME || dbConfig.database,
+    type: 'postgres',
+    host: 'linda.postgres.database.azure.com',
+    port: 5432,
+    username: 'linda@linda',
+    password:'BLOWblow123?',
+    database: 'stage',
     entities:[Offre, User,Declarerem,Analyseem, Archieve , Remarque],
-    synchronize: process.env.TYPEORM_SYNC || dbConfig.synchronize,
+    synchronize: true,
 
     
 }
