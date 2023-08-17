@@ -52,6 +52,8 @@ export class CreateDeclaredDto{
     Impact:string;
     @IsNotEmpty()
     email:string;
+    @IsNotEmpty()
+    pole:string;
     
     
 

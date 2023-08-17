@@ -55,7 +55,8 @@ export class DeclarerService {
       NeverEvent,
       Lequel,
       EtatPatient,
-      email
+      email,
+      pole
     } = CreatedeclaredDto;
   
     const Declared = new Declarerem();
@@ -88,6 +89,7 @@ export class DeclarerService {
     Declared.EtatPatient = EtatPatient;
     Declared.status = DeclardStatus.DECLARER;
     Declared.email=email
+    Declared.pole=pole
     const archieve = new Archieve();
   
     

@@ -74,6 +74,8 @@ DescEvent:string;
 Impact:string;
 @Column({ nullable: true })
 email:string;
+@Column({ nullable: true })
+pole:string;
 
 
 @OneToMany((type) => Analyseem, (analyse) => analyse.declarem, { eager: true })
